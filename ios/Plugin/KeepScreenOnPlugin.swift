@@ -15,4 +15,12 @@ public class KeepScreenOnPlugin: CAPPlugin {
             "value": implementation.echo(value)
         ])
     }
+    
+    @objc func enable(_ call: CAPPluginCall) {
+        UIApplication.shared.isIdleTimerDisabled = true;
+    }
+    
+    @objc func disable(_ call: CAPPluginCall) {
+        UIApplication.shared.isIdleTimerDisabled = false;
+    }
 }
