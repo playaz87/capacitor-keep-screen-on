@@ -13,24 +13,25 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`enable()`](#enable)
+* [`disable()`](#enable)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### enable()
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+enable() => Promise<void>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
+### disable()
+```typescript
+disable() => Promise<void>
+```
 
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
 --------------------
 
